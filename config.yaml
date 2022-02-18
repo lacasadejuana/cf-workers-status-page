@@ -15,25 +15,27 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
+  - id: negocios.juana.house # unique identifier
+    name: negocios.juana.house
+    description: 'Panel Negocios' # default=empty
     url: 'https://workers.cloudflare.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: lacasadejuana.cl
+    name: lacasadejuana.cl
+    description: 'CMS'
+    url: 'https://lacasadejuana.cl'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: 'https://admin.juana.house/'
+    name: 'https://admin.juana.house/'
+    description: 'CMS'
+    url: 'https://admin.juana.house/'
     method: GET
     expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
