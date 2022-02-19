@@ -9,7 +9,7 @@ on:
       - main
   repository_dispatch:
   schedule:
-    - cron: '0 0 1 * *'
+    - cron: '0 0 3 * *'
 
 jobs:
   deploy:
