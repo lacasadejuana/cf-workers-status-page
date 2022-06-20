@@ -18,7 +18,7 @@ monitors:
   - id: negocios.juana.house # unique identifier
     name: negocios.juana.house
     description: 'Panel Negocios' # default=empty
-    url: 'https://negocios.juana.house' # URL to fetch
+    url: 'https://negocios.juana.house/login' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
