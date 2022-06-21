@@ -15,6 +15,15 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
+  - id: negocios-dev.juana.house # unique identifier
+    name: negocios-dev.juana.house
+    description: 'Panel Negocios - Dev' # default=empty
+    url: 'https://negocios-dev.juana.house/login' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+
   - id: negocios.juana.house # unique identifier
     name: negocios.juana.house
     description: 'Panel Negocios' # default=empty
